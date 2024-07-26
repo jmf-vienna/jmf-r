@@ -1,11 +1,14 @@
 Package: jmf
 Title: JMF R Utility Functions
 Version: 0.0.0.9000
-Authors@R: 
-    person("Bela", "Hausmann", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-0846-1202"))
+Authors@R: c(
+    person("Bela", "Hausmann", role = "aut",
+           comment = c(ORCID = "0000-0002-0846-1202")),
+    person("Joint Microbiome Facility (JMF) of the Medical University of Vienna and the University of Vienna", , ,
+           "info.jmf@univie.ac.at", role = c("cre", "cph", "fnd"))
+  )
 Description: JMF R helpers and common functions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.0.0
+RoxygenNote: 7.3.2
