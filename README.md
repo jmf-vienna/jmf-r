@@ -1,4 +1,4 @@
-# JMF R utility functions <img src="man/figures/logo.png" align="right" height="120" alt="JMF" />
+# [JMF](https://jmf.univie.ac.at/) R utility functions <a href="https://jmf-vienna.github.io/jmf-r/"><img src="man/figures/logo.png" align="right" height="120" alt="JMF logo" /></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/jmf-vienna/jmf-r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jmf-vienna/jmf-r/actions/workflows/R-CMD-check.yaml)
@@ -7,7 +7,7 @@
 
 ## Installation
 
-You can install the current version of jmf from [GitHub](https://github.com/) with:
+You can install the current version of `jmf` from [GitHub](https://github.com/jmf-vienna/jmf-r/) with:
 
 ``` r
 # install.packages("pak")
@@ -19,4 +19,3 @@ pak::pak("jmf-vienna/jmf-r")
 ``` r
 library(jmf)
 ```
-
