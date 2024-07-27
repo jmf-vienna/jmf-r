@@ -1,6 +1,6 @@
-#' Shortcuts for `is.na`
+#' Shortcuts for [is.na()]
 #'
-#' `a(x)` is the same as `!is.na(x)` and `na` is an alias for `is.na`.
+#' `a(x)` is the same as `!is.na(x)` and `na()` is an alias for `is.na()`.
 #'
 #' @param x A vector to be tested.
 #'

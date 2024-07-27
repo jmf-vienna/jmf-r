@@ -4,4 +4,4 @@
 
 # jmf 0.1.0
 
-* added `a()` and `na()`
+* Added `a()` and `na()`.
