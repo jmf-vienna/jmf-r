@@ -7,11 +7,11 @@
 
 ## Installation
 
-You can install the current version of `jmf` from [GitHub](https://github.com/jmf-vienna/jmf-r/) with:
+You can install the latest release of `jmf` from [GitHub](https://github.com/jmf-vienna/jmf-r/) with:
 
 ``` r
 # install.packages("pak")
-pak::pak("jmf-vienna/jmf-r")
+pak::pak("jmf-vienna/jmf-r@*release")
 ```
 
 ## Usage
