@@ -2,3 +2,4 @@
 
 export(a)
 export(na)
+export(uniques)
