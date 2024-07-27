@@ -1,6 +1,6 @@
 Package: jmf
 Title: JMF R Utility Functions
-Version: 0.1
+Version: 0.1.0
 Authors@R: c(
     person("Bela", "Hausmann", role = "aut",
            comment = c(ORCID = "0000-0002-0846-1202")),
