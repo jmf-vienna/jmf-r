@@ -1,4 +1,4 @@
-# JMF R utility functions
+# JMF R utility functions <img src="man/figures/logo.png" align="right" height="120" alt="JMF" />
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/jmf-vienna/jmf-r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jmf-vienna/jmf-r/actions/workflows/R-CMD-check.yaml)
