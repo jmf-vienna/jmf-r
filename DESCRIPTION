@@ -14,7 +14,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Suggests: 
     spelling,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    tidyverse (>= 2.0.0)
 Config/testthat/edition: 3
 Language: en-US
 URL: https://jmf-vienna.github.io/jmf-r/
