@@ -20,3 +20,5 @@ Config/testthat/edition: 3
 Language: en-US
 URL: https://jmf-vienna.github.io/jmf-r/
 BugReports: https://github.com/jmf-vienna/jmf-r/issues
+Imports: 
+    rlang (>= 1.1.0)
