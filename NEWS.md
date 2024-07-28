@@ -1,4 +1,4 @@
-# jmf (development version)
+# jmf 0.2.0
 
 * Added `quiet()`.
 * Added `uniques()`.
