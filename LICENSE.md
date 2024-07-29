@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2024 Joint Microbiome Facility (JMF)
+Copyright (c) 2024 jmf authors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
