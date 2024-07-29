@@ -13,7 +13,7 @@ coverage](https://codecov.io/gh/jmf-vienna/jmf-r/branch/main/graph/badge.svg)](h
 ## Installation
 
 You can install the latest release of `jmf` from
-[GitHub](https://github.com/jmf-vienna/jmf-r/) with:
+[GitHub](https://github.com/jmf-vienna/jmf-r) with:
 
 ``` r
 # install.packages("pak")

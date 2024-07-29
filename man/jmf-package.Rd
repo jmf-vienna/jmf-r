@@ -14,6 +14,8 @@ JMF R helpers and common functions.
 Useful links:
 \itemize{
   \item \url{https://jmf-vienna.github.io/jmf-r/}
+  \item \url{https://github.com/jmf-vienna/jmf-r}
+  \item \url{https://jmf.univie.ac.at/}
   \item Report bugs at \url{https://github.com/jmf-vienna/jmf-r/issues}
 }
 

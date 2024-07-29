@@ -1,6 +1,6 @@
 Package: jmf
 Title: JMF R Utility Functions
-Version: 0.2.0.9001
+Version: 0.2.0.9002
 Authors@R: c(
     person("Bela", "Hausmann", role = "aut",
            comment = c(ORCID = "0000-0002-0846-1202")),
@@ -8,7 +8,8 @@ Authors@R: c(
   )
 Description: JMF R helpers and common functions.
 License: MIT + file LICENSE
-URL: https://jmf-vienna.github.io/jmf-r/
+URL: https://jmf-vienna.github.io/jmf-r/,
+    https://github.com/jmf-vienna/jmf-r, https://jmf.univie.ac.at/
 BugReports: https://github.com/jmf-vienna/jmf-r/issues
 Depends:
     R (>= 4.2)

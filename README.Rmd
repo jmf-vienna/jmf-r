@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 ## Installation
 
-You can install the latest release of `jmf` from [GitHub](https://github.com/jmf-vienna/jmf-r/) with:
+You can install the latest release of `jmf` from [GitHub](https://github.com/jmf-vienna/jmf-r) with:
 
 ```{r, eval=FALSE}
 # install.packages("pak")
