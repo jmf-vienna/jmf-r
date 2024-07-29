@@ -4,23 +4,22 @@ Version: 0.2.0.9001
 Authors@R: c(
     person("Bela", "Hausmann", role = "aut",
            comment = c(ORCID = "0000-0002-0846-1202")),
-    person("Joint Microbiome Facility (JMF) of the Medical University of Vienna and the University of Vienna", , ,
-           "info.jmf@univie.ac.at", role = c("cre", "cph", "fnd"))
+    person("Joint Microbiome Facility (JMF) of the Medical University of Vienna and the University of Vienna", , , "info.jmf@univie.ac.at", role = c("cre", "cph", "fnd"))
   )
 Description: JMF R helpers and common functions.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
-Depends: 
+URL: https://jmf-vienna.github.io/jmf-r/
+BugReports: https://github.com/jmf-vienna/jmf-r/issues
+Depends:
     R (>= 4.2)
-Suggests: 
+Imports:
+    rlang (>= 1.1.0)
+Suggests:
     spelling,
     testthat (>= 3.0.0),
     tidyverse (>= 2.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
 Language: en-US
-URL: https://jmf-vienna.github.io/jmf-r/
-BugReports: https://github.com/jmf-vienna/jmf-r/issues
-Imports: 
-    rlang (>= 1.1.0)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
