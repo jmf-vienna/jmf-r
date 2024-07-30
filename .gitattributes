@@ -1,0 +1,3 @@
+README.md linguist-generated=true
+R/import-standalone-*.R linguist-vendored=true
+tests/*.R linguist-vendored=true
