@@ -5,7 +5,7 @@ test_that("no return value", {
 })
 
 test_that("tidyverse is quiet", {
-  expect_silent(library(tidyverse))
+  expect_silent(library(tidyverse)) # nolint: undesirable_function_linter.
 })
 
 test_that("readr is quiet", {

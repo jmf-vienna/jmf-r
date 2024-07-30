@@ -1,7 +1,7 @@
 test_that("a works", {
-  expect_equal(a(c(1, NA, 3)), c(TRUE, FALSE, TRUE))
+  expect_identical(a(c(1L, NA, 3L)), c(TRUE, FALSE, TRUE))
 })
 
 test_that("na works", {
-  expect_equal(na(c(1, NA, 3)), c(FALSE, TRUE, FALSE))
+  expect_identical(na(c(1L, NA, 3L)), c(FALSE, TRUE, FALSE))
 })

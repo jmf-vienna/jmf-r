@@ -1,6 +1,8 @@
-linters: linters_with_defaults() # see vignette("lintr")
-encoding: "UTF-8"
+linters: all_linters(
+    implicit_integer_linter = implicit_integer_linter(allow_colon = TRUE)
+  )
 exclusions: list(
     "R/import-standalone-obj-type.R",
-    "R/import-standalone-types-check.R"
+    "R/import-standalone-types-check.R",
+    "tests/testthat.R"
   )

@@ -15,7 +15,9 @@
 #'
 #' @export
 quiet <- function() {
+  # nolint start: undesirable_function_linter.
   options(tidyverse.quiet = TRUE)
   options(readr.show_col_types = FALSE)
+  # nolint end
   invisible()
 }
