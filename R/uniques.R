@@ -14,7 +14,6 @@
 #'
 #' @export
 uniques <- function(x) {
-  x |>
-    unique() |>
-    sort()
+  x <- unique(x)
+  withr::with_collate("C", sort(x, na.last = TRUE))
 }

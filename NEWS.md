@@ -1,5 +1,7 @@
 # jmf (development version)
 
+* `uniques()` now keeps `NA`s and always uses `LC_COLLATE=C`.
+
 # jmf 0.2.0
 
 * Added `quiet()`.

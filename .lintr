@@ -1,5 +1,5 @@
 linters: all_linters(
-    implicit_integer_linter = implicit_integer_linter(allow_colon = TRUE)
+    implicit_integer_linter = NULL
   )
 exclusions: list(
     "R/import-standalone-obj-type.R",
