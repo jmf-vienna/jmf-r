@@ -21,7 +21,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Joint Microbiome Facility (JMF) of the Medical University of Vienna and the University of Vienna \email{info.jmf@univie.ac.at} [copyright holder, funder]
+\strong{Maintainer}: Joint Microbiome Facility (JMF) of the Medical University of Vienna and the University of Vienna \email{info.jmf@univie.ac.at} [funder]
 
 Authors:
 \itemize{
