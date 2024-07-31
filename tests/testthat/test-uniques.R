@@ -19,5 +19,9 @@ test_that("characters complex", {
     "z1", "z10", "z100", "z2", "z20", "z5",
     NA
   )
-  expect_identical(uniques(c(rev(x), x)), x)
+
+  input <- c(rev(x), x)
+  expect_identical(uniques(input), x)
+  expect_identical(withr::with_collate("C", uniques(input)), x)
+  expect_identical(withr::with_collate("en_US.UTF-8", uniques(input)), x)
 })
