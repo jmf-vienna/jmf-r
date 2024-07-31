@@ -4,7 +4,7 @@ Version: 0.2.0.9004
 Authors@R: c(
     person("Bela", "Hausmann", role = "aut",
            comment = c(ORCID = "0000-0002-0846-1202")),
-    person("Joint Microbiome Facility (JMF) of the Medical University of Vienna and the University of Vienna", , , "info.jmf@univie.ac.at", role = c("cre", "cph", "fnd"))
+    person("Joint Microbiome Facility (JMF) of the Medical University of Vienna and the University of Vienna", , , "info.jmf@univie.ac.at", role = c("cre", "fnd"))
   )
 Description: JMF R helpers and common functions.
 License: MIT + file LICENSE
