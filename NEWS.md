@@ -1,4 +1,4 @@
-# jmf (development version)
+# jmf 0.2.1
 
 * `uniques()` now keeps `NA`s and always uses `LC_COLLATE=C`.
 
