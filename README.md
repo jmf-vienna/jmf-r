@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# [JMF](https://jmf.univie.ac.at/) R utility functions <a href="https://jmf-vienna.github.io/jmf-r/"><img src="man/figures/logo.png" align="right" height="120" alt="JMF logo" /></a>
+# [JMF](https://jmf.univie.ac.at/) R utility functions <a href="https://jmf-vienna.github.io/jmf-r/"><img src="man/figures/logo.svg" align="right" height="120" alt="JMF logo" /></a>
 
 <!-- badges: start -->
 
