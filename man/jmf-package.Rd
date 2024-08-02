@@ -4,11 +4,12 @@
 \name{jmf-package}
 \alias{jmf}
 \alias{jmf-package}
-\title{jmf: JMF R Utility Functions}
+\title{jmf: JMF Utility Functions}
 \description{
 \if{html}{\figure{logo.svg}{options: style='float: right' alt='logo' width='120'}}
 
-JMF R helpers and common functions.
+An assortment of utilities, helpers, and common functions
+used at the Joint Microbiome Facility (JMF).
 }
 \seealso{
 Useful links:

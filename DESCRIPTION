@@ -1,12 +1,13 @@
 Package: jmf
-Title: JMF R Utility Functions
-Version: 0.2.1.9000
+Title: JMF Utility Functions
+Version: 0.2.1.9001
 Authors@R: c(
     person("Bela", "Hausmann", role = "aut",
            comment = c(ORCID = "0000-0002-0846-1202")),
     person("Joint Microbiome Facility (JMF) of the Medical University of Vienna and the University of Vienna", , , "info.jmf@univie.ac.at", role = c("cre", "fnd"))
   )
-Description: JMF R helpers and common functions.
+Description: An assortment of utilities, helpers, and common functions
+    used at the Joint Microbiome Facility (JMF).
 License: MIT + file LICENSE
 URL: https://jmf-vienna.github.io/jmf-r/,
     https://github.com/jmf-vienna/jmf-r, https://jmf.univie.ac.at/

@@ -1,7 +1,8 @@
 #' @description
 #' ![](logo.svg "options: style='float: right' alt='logo' width='120'")
 #'
-#' JMF R helpers and common functions.
+#' An assortment of utilities, helpers, and common functions
+#' used at the Joint Microbiome Facility (JMF).
 #'
 #' @keywords internal
 "_PACKAGE"
