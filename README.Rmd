@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 
 
-# [JMF](https://jmf.univie.ac.at/) R utility functions <a href="https://jmf-vienna.github.io/jmf-r/"><img src="man/figures/logo.svg" align="right" height="120" alt="JMF logo" /></a>
+# [JMF](https://jmf.univie.ac.at/) R utility functions <a href="https://jmf-vienna.github.io/jmf-r/"><img src="man/figures/logo.svg" align="right" height="120" alt="logo" /></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/jmf-vienna/jmf-r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jmf-vienna/jmf-r/actions/workflows/R-CMD-check.yaml)
@@ -73,3 +73,7 @@ starwars |>
   select(name, birth_year, hair_color) |>
   filter(a(birth_year) & na(hair_color))
 ```
+
+<p align="center">
+<a href="https://jmf.univie.ac.at/"><img src="man/figures/jmf-logo.svg" alt="JMF logo" height="64" /></a>
+</p>

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# [JMF](https://jmf.univie.ac.at/) R utility functions <a href="https://jmf-vienna.github.io/jmf-r/"><img src="man/figures/logo.svg" align="right" height="120" alt="JMF logo" /></a>
+# [JMF](https://jmf.univie.ac.at/) R utility functions <a href="https://jmf-vienna.github.io/jmf-r/"><img src="man/figures/logo.svg" align="right" height="120" alt="logo" /></a>
 
 <!-- badges: start -->
 
@@ -70,3 +70,8 @@ starwars |>
 #> 3 Greedo                        44 <NA>      
 #> 4 Jabba Desilijic Tiure        600 <NA>
 ```
+
+<p align="center">
+
+<a href="https://jmf.univie.ac.at/"><img src="man/figures/jmf-logo.svg" alt="JMF logo" height="64" /></a>
+</p>
