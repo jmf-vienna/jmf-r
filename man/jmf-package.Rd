@@ -6,7 +6,7 @@
 \alias{jmf-package}
 \title{jmf: JMF R Utility Functions}
 \description{
-\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+\if{html}{\figure{logo.svg}{options: style='float: right' alt='logo' width='120'}}
 
 JMF R helpers and common functions.
 }
