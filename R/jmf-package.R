@@ -11,3 +11,6 @@
 #' @import rlang
 ## usethis namespace: end
 NULL
+
+# https://rex.r-lib.org/index.html#using-rex-in-other-packages
+rex::register_shortcuts("jmf")

@@ -71,6 +71,23 @@ starwars |>
 #> 4 Jabba Desilijic Tiure        600 <NA>
 ```
 
+### Validation of JMF IDs
+
+``` r
+# valid JMF project ID:
+is_jmf_project_id("JMF-2401-42")
+#> [1] TRUE
+
+# this is a JMF sample ID:
+is_jmf_project_id("JMF-2401-42-0001")
+#> [1] FALSE
+```
+
+``` r
+jmf_project_id_regex(internal = "allow")
+#> JMF-(?:(?:19(?:01|02|03|04|05|06|07|08|09|10|11|12|DM)-[1-9A-Z])|(?:20(?:01|02|03|04|05|06|07|08|09|10|11|12)-[1-9A-Z])|(?:(?:(?:2[1-9])|(?:[3-9][0-9]))(?:01|02|03|04|05|06|07|08|09|10|11|12)-(?:(?:0[1-9])|(?:[1-9][0-9])))|(?:(?:19NC|19PC|CTRL)-[1-9A-Z]))
+```
+
 <p align="center">
 
 <a href="https://jmf.univie.ac.at/"><img src="man/figures/jmf-logo.svg" alt="JMF logo" height="64" /></a>

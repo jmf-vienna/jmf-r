@@ -74,6 +74,20 @@ starwars |>
   filter(a(birth_year) & na(hair_color))
 ```
 
+### Validation of JMF IDs
+
+```{r}
+# valid JMF project ID:
+is_jmf_project_id("JMF-2401-42")
+
+# this is a JMF sample ID:
+is_jmf_project_id("JMF-2401-42-0001")
+```
+
+```{r}
+jmf_project_id_regex(internal = "allow")
+```
+
 <p align="center">
 <a href="https://jmf.univie.ac.at/"><img src="man/figures/jmf-logo.svg" alt="JMF logo" height="64" /></a>
 </p>

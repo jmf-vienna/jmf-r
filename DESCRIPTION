@@ -1,6 +1,6 @@
 Package: jmf
 Title: JMF Utility Functions
-Version: 0.2.1.9001
+Version: 0.2.1.9002
 Authors@R: c(
     person("Bela", "Hausmann", role = "aut",
            comment = c(ORCID = "0000-0002-0846-1202")),
@@ -15,9 +15,12 @@ BugReports: https://github.com/jmf-vienna/jmf-r/issues
 Depends:
     R (>= 4.2)
 Imports:
+    rex (>= 1.0.0),
     rlang (>= 1.1.0),
+    stringr (>= 1.0.0),
     withr (>= 3.0.0)
 Suggests:
+    purrr (>= 1.0.0),
     spelling,
     testthat (>= 3.0.0),
     tidyverse (>= 2.0.0)
