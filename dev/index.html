@@ -111,15 +111,15 @@
 <h3 id="shortcuts">Shortcuts<a class="anchor" aria-label="anchor" href="#shortcuts"></a>
 </h3>
 <ul>
-<li>available (i.e., not <code>NA</code>): <code><a href="reference/a.html">a()</a></code>
+<li>available (i.e., not <code>NA</code>): <code><a href="reference/na.html">a()</a></code>
 </li>
-<li>not available (i.e., <code>NA</code>): <code><a href="reference/a.html">na()</a></code>
+<li>not available (i.e., <code>NA</code>): <code><a href="reference/na.html">na()</a></code>
 </li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">starwars</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">name</span>, <span class="va">birth_year</span>, <span class="va">hair_color</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="fu"><a href="reference/a.html">a</a></span><span class="op">(</span><span class="va">birth_year</span><span class="op">)</span>, <span class="fu"><a href="reference/a.html">na</a></span><span class="op">(</span><span class="va">hair_color</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="fu"><a href="reference/na.html">a</a></span><span class="op">(</span><span class="va">birth_year</span><span class="op">)</span>, <span class="fu"><a href="reference/na.html">na</a></span><span class="op">(</span><span class="va">hair_color</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 4 × 3</span></span>
 <span><span class="co">#&gt;   name                  birth_year hair_color</span></span>
 <span><span class="co">#&gt;   &lt;chr&gt;                      &lt;dbl&gt; &lt;chr&gt;     </span></span>
