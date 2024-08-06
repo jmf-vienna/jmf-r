@@ -13,17 +13,16 @@ coverage](https://codecov.io/gh/jmf-vienna/jmf-r/branch/main/graph/badge.svg)](h
 ## Installation
 
 Install the latest release from
-[GitHub](https://github.com/jmf-vienna/jmf-r):
+[GitHub](https://github.com/jmf-vienna/jmf-r) using
+[pak](https://pak.r-lib.org/):
 
 ``` r
-# install.packages("pak")
 pak::pak("jmf-vienna/jmf-r@*release")
 ```
 
 Or install the development version:
 
 ``` r
-# install.packages("pak")
 pak::pak("jmf-vienna/jmf-r")
 ```
 
@@ -61,7 +60,7 @@ x |> uniques()
 ``` r
 starwars |>
   select(name, birth_year, hair_color) |>
-  filter(a(birth_year) & na(hair_color))
+  filter(a(birth_year), na(hair_color))
 #> # A tibble: 4 × 3
 #>   name                  birth_year hair_color
 #>   <chr>                      <dbl> <chr>     

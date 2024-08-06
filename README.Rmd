@@ -5,6 +5,8 @@ output: github_document
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include=FALSE}
+# nolint start: nonportable_path_linter, undesirable_function_linter, library_call_linter.
+
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -24,17 +26,15 @@ knitr::opts_chunk$set(
 
 ## Installation
 
-Install the latest release from [GitHub](https://github.com/jmf-vienna/jmf-r):
+Install the latest release from [GitHub](https://github.com/jmf-vienna/jmf-r) using [pak](https://pak.r-lib.org/):
 
 ```{r, eval=FALSE}
-# install.packages("pak")
 pak::pak("jmf-vienna/jmf-r@*release")
 ```
 
 Or install the development version:
 
 ```{r, eval=FALSE}
-# install.packages("pak")
 pak::pak("jmf-vienna/jmf-r")
 ```
 
@@ -71,7 +71,7 @@ x |> uniques()
 ```{r}
 starwars |>
   select(name, birth_year, hair_color) |>
-  filter(a(birth_year) & na(hair_color))
+  filter(a(birth_year), na(hair_color))
 ```
 
 ### Validation of JMF IDs
@@ -86,4 +86,9 @@ is_jmf_project_id("JMF-2401-42-0001")
 
 ```{r}
 jmf_project_id_regex(internal = "allow")
+```
+
+
+```{r, include=FALSE}
+# nolint end
 ```

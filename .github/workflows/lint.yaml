@@ -32,3 +32,9 @@ jobs:
         shell: Rscript {0}
         env:
           LINTR_ERROR_ON_LINT: true
+
+      - name: Lint README
+        run: lintr::lint("README.Rmd")
+        shell: Rscript {0}
+        env:
+          LINTR_ERROR_ON_LINT: true

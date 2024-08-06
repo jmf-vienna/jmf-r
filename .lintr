@@ -1,5 +1,6 @@
 linters: all_linters(
     line_length_linter = line_length_linter(120),
+    extraction_operator_linter = NULL,
     implicit_integer_linter = NULL
   )
 exclusions: list(
