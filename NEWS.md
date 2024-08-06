@@ -1,13 +1,15 @@
 # jmf (development version)
 
+* Added `is_jmf_project_id()` and `jmf_project_id_regex()`.
+
 # jmf 0.2.1
 
-* `uniques()` now keeps `NA`s and always uses `LC_COLLATE=C`.
+* `uniques()` keeps `NA`s and sorts using `LC_COLLATE=C`.
 
 # jmf 0.2.0
 
-* Added `quiet()`.
 * Added `uniques()`.
+* Added `quiet()`.
 
 # jmf 0.1.0
 
