@@ -1,12 +1,12 @@
 #' Unique and sorted vectors
 #'
-#' Like [unique()][base::unique], but also sorted.
+#' Like [`unique()`][base::unique], but also sorted.
 #'
 #' @param x A vector.
 #'
 #' @return A sorted vector without duplicates.
 #'
-#' @seealso [unique()][base::unique]
+#' @seealso [`unique()`][base::unique]
 #'
 #' @examples
 #' base::unique(c(3, 1, 2, 3))

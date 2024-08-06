@@ -10,14 +10,14 @@ is_jmf_project_id(string, internal = "deny")
 jmf_project_id_regex(internal = "deny")
 }
 \arguments{
-\item{string}{Input vector passed to \link[stringr:str_detect]{str_detect()}.}
+\item{string}{Input vector passed to \code{\link[stringr:str_detect]{str_detect()}}.}
 
 \item{internal}{\code{"allow"} or \code{"deny"} internal IDs.}
 }
 \value{
 \itemize{
 \item \code{is_jmf_project_id()}: a logical vector the same length as \code{string}.
-\item \code{jmf_project_id_regex()}: a \link[rex:rex]{rex()} regular expression.
+\item \code{jmf_project_id_regex()}: a \code{\link[rex:rex]{rex()}} regular expression.
 }
 }
 \description{

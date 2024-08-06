@@ -13,7 +13,7 @@ uniques(x)
 A sorted vector without duplicates.
 }
 \description{
-Like \link[base:unique]{unique()}, but also sorted.
+Like \code{\link[base:unique]{unique()}}, but also sorted.
 }
 \examples{
 base::unique(c(3, 1, 2, 3))
@@ -21,5 +21,5 @@ uniques(c(3, 1, 2, 3))
 
 }
 \seealso{
-\link[base:unique]{unique()}
+\code{\link[base:unique]{unique()}}
 }

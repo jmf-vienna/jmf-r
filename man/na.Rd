@@ -16,7 +16,7 @@ na(x)
 A logical vector.
 }
 \description{
-\code{a(x)} is the same as \code{!is.na(x)} and \code{na()} is an alias for \code{is.na()}.
+\code{a(x)} is the same as \code{!is.na(x)} and \code{na()} is an alias for \code{\link[=is.na]{is.na()}}.
 }
 \examples{
 a(c(1, NA, 3))

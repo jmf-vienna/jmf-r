@@ -3,12 +3,12 @@
 #' * `is_jmf_project_id()`: checks for valid JMF project IDs.
 #' * `jmf_project_id_regex()`: returns the underlying regular expression.
 #'
-#' @param string Input vector passed to [str_detect()][stringr::str_detect].
+#' @param string Input vector passed to [`str_detect()`][stringr::str_detect].
 #' @param internal `"allow"` or `"deny"` internal IDs.
 #'
 #' @return
 #' * `is_jmf_project_id()`: a logical vector the same length as `string`.
-#' * `jmf_project_id_regex()`: a [rex()][rex::rex] regular expression.
+#' * `jmf_project_id_regex()`: a [`rex()`][rex::rex] regular expression.
 #'
 #' @examples
 #' # valid JMF project ID:
