@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>JMF R Utility Functions • jmf</title>
+<title>JMF Utility Functions • jmf</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -16,9 +16,9 @@
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.4.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="JMF R Utility Functions">
-<meta name="description" content="JMF R helpers and common functions.">
-<meta property="og:description" content="JMF R helpers and common functions.">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="JMF Utility Functions">
+<meta name="description" content="An assortment of utilities, helpers, and common functions used at the Joint Microbiome Facility (JMF).">
+<meta property="og:description" content="An assortment of utilities, helpers, and common functions used at the Joint Microbiome Facility (JMF).">
 <meta property="og:image" content="https://jmf-vienna.github.io/jmf-r/logo.svg">
 </head>
 <body>
@@ -29,7 +29,7 @@
 
     <a class="navbar-brand me-2" href="index.html">jmf</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.2.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.3.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,14 +73,12 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>Install the latest release from <a href="https://github.com/jmf-vienna/jmf-r" class="external-link">GitHub</a>:</p>
+<p>Install the latest release from <a href="https://github.com/jmf-vienna/jmf-r" class="external-link">GitHub</a> using <a href="https://pak.r-lib.org/" class="external-link">pak</a>:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"jmf-vienna/jmf-r@*release"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"jmf-vienna/jmf-r@*release"</span><span class="op">)</span></span></code></pre></div>
 <p>Or install the development version:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"jmf-vienna/jmf-r"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"jmf-vienna/jmf-r"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
@@ -112,15 +110,15 @@
 <h3 id="shortcuts">Shortcuts<a class="anchor" aria-label="anchor" href="#shortcuts"></a>
 </h3>
 <ul>
-<li>available (i.e., not <code>NA</code>): <code><a href="reference/a.html">a()</a></code>
+<li>available (i.e., not <code>NA</code>): <code><a href="reference/na.html">a()</a></code>
 </li>
-<li>not available (i.e., <code>NA</code>): <code><a href="reference/a.html">na()</a></code>
+<li>not available (i.e., <code>NA</code>): <code><a href="reference/na.html">na()</a></code>
 </li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">starwars</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">name</span>, <span class="va">birth_year</span>, <span class="va">hair_color</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="fu"><a href="reference/a.html">a</a></span><span class="op">(</span><span class="va">birth_year</span><span class="op">)</span> <span class="op">&amp;</span> <span class="fu"><a href="reference/a.html">na</a></span><span class="op">(</span><span class="va">hair_color</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="fu"><a href="reference/na.html">a</a></span><span class="op">(</span><span class="va">birth_year</span><span class="op">)</span>, <span class="fu"><a href="reference/na.html">na</a></span><span class="op">(</span><span class="va">hair_color</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 4 × 3</span></span>
 <span><span class="co">#&gt;   name                  birth_year hair_color</span></span>
 <span><span class="co">#&gt;   &lt;chr&gt;                      &lt;dbl&gt; &lt;chr&gt;     </span></span>
@@ -128,6 +126,21 @@
 <span><span class="co">#&gt; 2 R2-D2                         33 &lt;NA&gt;      </span></span>
 <span><span class="co">#&gt; 3 Greedo                        44 &lt;NA&gt;      </span></span>
 <span><span class="co">#&gt; 4 Jabba Desilijic Tiure        600 &lt;NA&gt;</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="validation-of-jmf-ids">Validation of JMF IDs<a class="anchor" aria-label="anchor" href="#validation-of-jmf-ids"></a>
+</h3>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># valid JMF project ID:</span></span>
+<span><span class="fu"><a href="reference/validate-jmf-ids.html">is_jmf_project_id</a></span><span class="op">(</span><span class="st">"JMF-2401-42"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] TRUE</span></span>
+<span></span>
+<span><span class="co"># this is a JMF sample ID:</span></span>
+<span><span class="fu"><a href="reference/validate-jmf-ids.html">is_jmf_project_id</a></span><span class="op">(</span><span class="st">"JMF-2401-42-0001"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/validate-jmf-ids.html">jmf_project_id_regex</a></span><span class="op">(</span>internal <span class="op">=</span> <span class="st">"allow"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; JMF-(?:(?:19(?:01|02|03|04|05|06|07|08|09|10|11|12|DM)-[1-9A-Z])|(?:20(?:01|02|03|04|05|06|07|08|09|10|11|12)-[1-9A-Z])|(?:(?:(?:2[1-9])|(?:[3-9][0-9]))(?:01|02|03|04|05|06|07|08|09|10|11|12)-(?:(?:0[1-9])|(?:[1-9][0-9])))|(?:(?:19NC|19PC|CTRL)-[1-9A-Z]))</span></span></code></pre></div>
 </div>
 </div>
 </div>
