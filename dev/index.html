@@ -30,7 +30,7 @@
 
     <a class="navbar-brand me-2" href="index.html">jmf</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.2.1.9002</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.2.1.9003</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,14 +74,12 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>Install the latest release from <a href="https://github.com/jmf-vienna/jmf-r" class="external-link">GitHub</a>:</p>
+<p>Install the latest release from <a href="https://github.com/jmf-vienna/jmf-r" class="external-link">GitHub</a> using <a href="https://pak.r-lib.org/" class="external-link">pak</a>:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"jmf-vienna/jmf-r@*release"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"jmf-vienna/jmf-r@*release"</span><span class="op">)</span></span></code></pre></div>
 <p>Or install the development version:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"jmf-vienna/jmf-r"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"jmf-vienna/jmf-r"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
@@ -121,7 +119,7 @@
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">starwars</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">name</span>, <span class="va">birth_year</span>, <span class="va">hair_color</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="fu"><a href="reference/a.html">a</a></span><span class="op">(</span><span class="va">birth_year</span><span class="op">)</span> <span class="op">&amp;</span> <span class="fu"><a href="reference/a.html">na</a></span><span class="op">(</span><span class="va">hair_color</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="fu"><a href="reference/a.html">a</a></span><span class="op">(</span><span class="va">birth_year</span><span class="op">)</span>, <span class="fu"><a href="reference/a.html">na</a></span><span class="op">(</span><span class="va">hair_color</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 4 × 3</span></span>
 <span><span class="co">#&gt;   name                  birth_year hair_color</span></span>
 <span><span class="co">#&gt;   &lt;chr&gt;                      &lt;dbl&gt; &lt;chr&gt;     </span></span>
@@ -144,9 +142,6 @@
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/validate-jmf-ids.html">jmf_project_id_regex</a></span><span class="op">(</span>internal <span class="op">=</span> <span class="st">"allow"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; JMF-(?:(?:19(?:01|02|03|04|05|06|07|08|09|10|11|12|DM)-[1-9A-Z])|(?:20(?:01|02|03|04|05|06|07|08|09|10|11|12)-[1-9A-Z])|(?:(?:(?:2[1-9])|(?:[3-9][0-9]))(?:01|02|03|04|05|06|07|08|09|10|11|12)-(?:(?:0[1-9])|(?:[1-9][0-9])))|(?:(?:19NC|19PC|CTRL)-[1-9A-Z]))</span></span></code></pre></div>
-<p align="center">
-<a href="https://jmf.univie.ac.at/" class="external-link"><img src="reference/figures/jmf-logo.svg" alt="JMF logo" height="64"></a>
-</p>
 </div>
 </div>
 </div>
