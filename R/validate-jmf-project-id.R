@@ -43,9 +43,12 @@ jmf_project_id_regex <- function(internal = "deny") {
 
   months <- stringr::str_pad(1:12, 2, pad = "0")
   month <- rex::rex(or(months))
-  month_or_dm <- rex::rex(or(c(months, "DM")))
+  month_2019 <- rex::rex(or(c(
+    months, "DM",
+    if (internal == "allow") c("NC", "PC")
+  )))
 
-  one_digit <- rex::rex(one_of(range(1, 9), range("A", "Z")))
+  one_base36_digit <- rex::rex(one_of(range(1, 9), range("A", "Z")))
   two_digits <- rex::rex(or(
     group("0", range(1, 9)),
     group(range(1, 9), range(0, 9))
@@ -54,12 +57,18 @@ jmf_project_id_regex <- function(internal = "deny") {
   rex::rex(
     "JMF-",
     or(
-      group("19", month_or_dm, "-", one_digit),
-      group("20", month, "-", one_digit),
-      group(gte_twentyone, month, "-", two_digits),
-      if (internal == "allow") {
-        group(or("19NC", "19PC", "CTRL"), "-", one_digit)
-      }
+      group(
+        or(
+          group("19", month_2019),
+          group("20", month),
+          if (internal == "allow") n_times(range("A", "Z"), 4)
+        ),
+        "-", one_base36_digit
+      ),
+      group(
+        gte_twentyone, month,
+        "-", two_digits
+      )
     )
   )
   # nolint end

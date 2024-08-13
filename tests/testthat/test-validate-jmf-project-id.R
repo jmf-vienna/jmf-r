@@ -1,9 +1,18 @@
 internal_jmf_project_ids <- c(
+  # in use:
   "JMF-CTRL-1",
   "JMF-CTRL-2",
-  # legacy IDs:
+  # in use (legacy):
   "JMF-19NC-1",
-  "JMF-19PC-1"
+  "JMF-19PC-1",
+  # allowed, but not in use:
+  "JMF-CTRL-K",
+  "JMF-ABCD-3",
+  "JMF-XYXY-4",
+  "JMF-AAAA-1",
+  "JMF-ZZZZ-Z",
+  "JMF-19NC-2",
+  "JMF-19PC-Z"
 )
 
 test_that("correct JMF project IDs match", {
@@ -67,6 +76,12 @@ test_that("incorrect JMF project IDs do not match", {
     "JMF-2101-AA",
     "JMF-2101-a",
     "JMF-2113-01",
+    "JMF-19MC-1",
+    "JMF-20NC-1",
+    "JMF-21PC-01",
+    "JMF-CTRL-0",
+    "JMF-CTRL-01",
+    "JMF-CTR0-1",
     # non-standard digits:
     # see https://stringr.tidyverse.org/articles/regular-expressions.html#matching-multiple-characters
     "JMF-19១1-1",
@@ -97,6 +112,8 @@ test_that("incorrect JMF project IDs do not match", {
     "JMF-1901",
     "1901",
     "1901-1",
+    "JMF-190-1",
+    "JMF-CTR-1",
     " JMF-1901-1",
     "JMF-1901-1 ",
     " ",
@@ -117,4 +134,9 @@ test_that("incorrect JMF project IDs do not match", {
     internal_jmf_project_ids |> is_jmf_project_id(internal = "deny"),
     internal_jmf_project_ids |> length() |> rep(FALSE, times = _)
   )
+})
+
+test_that("regex snapshot", {
+  expect_snapshot(jmf_project_id_regex())
+  expect_snapshot(jmf_project_id_regex(internal = "allow"))
 })
